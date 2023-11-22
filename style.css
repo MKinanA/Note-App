@@ -1,0 +1,48 @@
+:root {
+    --color: #ffffff;
+    --bg: #212529;
+}
+
+body[data-bs-theme] * {
+    color: var(--color);
+    border-width: 1.5px;
+}
+
+body[data-bs-theme] *:not(button, a) {
+    border-color: var(--color);
+}
+
+body[data-bs-theme] *[disabled] {
+    opacity: 75%;
+}
+
+body[data-bs-theme] button, body[data-bs-theme] a {
+    padding: 0 4px;
+    border: none;
+}
+
+div.card-header, div.card-body, div.card-footer {
+    gap: 1rem;
+}
+
+div.card-header div, div.card-body div, div.card-footer div {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+div.card-header div div, div.card-body div div, div.card-footer div div {
+    gap: 0.5rem;
+}
+
+header {
+    border-radius: 0 0 6px 6px;
+    background: var(--bg);
+    outline: 2px solid var(--bg);
+    outline-offset: 0;
+}
+
+.form-control:focus {
+    border-color: var(--color);
+    box-shadow: none;
+}
